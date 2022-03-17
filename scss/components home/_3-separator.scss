@@ -1,0 +1,143 @@
+.separator{
+    
+    .container{
+        background-image: url(../../img/breaker-1.jpg);
+        background-position: right;
+        height:630px;
+        .card{
+            margin: 0 1rem;
+            padding-top: 7rem;
+            color: white;
+
+            .text{
+                margin-bottom: 2rem;
+                h2{
+                    font-family: "Playfair Display", serif;
+                    font-style: italic;
+                    font-size: $f-6;
+                    display: inline-block;
+                    font-weight: 400;
+                }
+                .line{
+                    margin-left: 0.5rem;
+                    display: inline-block;
+                    height: 1px;
+                    background-color: white;
+                    width: 100px;
+                }
+            }
+
+            h1{
+                font-size: $f-8;
+                margin-bottom: 1.5rem;
+            }
+            .price{
+                font-size: 4rem;
+                position: relative;
+                top: 0;
+                left: 20px;
+                display: inline-block;
+                .dolar{
+                    position: absolute;
+                    top: 15px;
+                    left: -20px;
+                    font-size: $f-9;
+                }
+                .each{
+                    position: absolute;
+                    bottom: -14px;
+                    right: -5px;
+                    font-size: $f-5;
+                    font-weight: 400;
+                }
+            }
+            
+            ul{
+                margin-top: 1rem;
+                color: $last-color;
+                list-style-type: none;
+                li{
+                    font-size: $f-4;
+                    margin-bottom: 0.7rem;
+                }
+            }
+
+            a{
+                margin-top: 1.5rem;
+                background-color: $first-color;
+                border-radius: $rad-5px;
+                font-size: $f-2;
+                font-weight: bold;
+                letter-spacing: 0.2rem;
+                color: white;
+                padding: 1.3rem 3.5rem;
+                transition: $trans-3;
+            }
+            a:hover{
+                background-color: $last-color;
+            }
+        }
+    }
+
+    @include mq("md-5"){
+
+        .container{
+            height:530px;
+            .card{
+                h1{
+                    font-size: $f-10;
+                    font-weight: 900;
+                }
+                .grid{
+                    display: flex;
+                    .price{
+                        margin-right: 4.5rem;
+                        left: 25px;
+                        font-weight: 500;
+                        .dolar{
+                            font-weight: 500;
+                            left: -25px;
+                        }
+
+                    }
+                    ul{
+                        margin-top: 0.5rem;
+                        li{
+                            font-size: $f-4;
+                        }
+                    }    
+                }
+            }
+        }
+    }
+
+    @include mq("md"){
+
+        .container{
+            .card{
+                margin: 0 2rem;
+                h1{
+                    font-size: $f-13;
+                }
+                a{
+                    padding: 1.3rem 4rem;
+                }
+            }
+        }
+    }
+
+    @include mq("lg"){
+
+        .container{
+            background-position: right;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .card{
+               h1{
+                   font-size: 4rem;
+               }
+            }
+        }
+    }
+}

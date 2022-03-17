@@ -1,0 +1,174 @@
+footer{
+    background-color: #0f1924;
+
+    .footer-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 4rem;
+        img{
+            width: 135px;
+        }
+        p{
+            margin-top: 1.5rem;
+            text-align: center;
+            color: #a8a8a8;
+            font-size: $f-3;
+            line-height: 1.7rem;
+        }
+    }
+
+    .footer-body{
+        color: white;
+        margin: 0 1rem;
+        margin-top: 3rem;
+        padding-bottom: 3rem;
+        .card1{
+            .title{
+                margin-bottom: 2rem;
+                h1{
+                    font-size: $f-4;
+                    padding-bottom: 0.8rem;
+                }
+                .line{
+                    height: 2px;
+                    width: 40px;
+                    background-color: #a41a13;
+                }
+            }
+
+            .body{
+                margin-bottom: 3rem;
+                h1{
+                    font-size: $f-6;
+                    font-weight: 400;
+                    margin-bottom: 1.5rem;
+                }
+                p{
+                    color: #a8a8a8;
+                    font-size: $f-3;
+                    line-height: 1.7rem;
+                }
+            }
+        }
+
+        .card2{
+            .title{
+                margin-bottom: 2.5rem;
+                h1{
+                    font-size: $f-4;
+                    padding-bottom: 0.8rem;
+                }
+                .line{
+                    height: 2px;
+                    width: 40px;
+                    background-color: #a41a13;
+                }
+            }
+
+            .body{
+                margin-right: 4rem;
+                li{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 300px;
+                    list-style: none;
+                    color: #a8a8a8;
+                    margin-bottom: 1rem;
+                    font-size: $f-3;
+                    span{
+                        font-size: $f-3;
+                        display: inline-block;
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-footer{
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem 0;
+        p{
+            width: 240px;
+            line-height: 1.7rem;
+            color: #a8a8a8;
+            font-size: $f-3;
+            span{
+                font-size: $f-3;
+                color: #a41a13;
+                transition: $trans-3;
+                cursor: pointer;
+            }
+            span:hover{
+                color: $last-color;
+            }
+        }
+    }
+
+    @include mq("md-5"){
+    
+
+        .footer-footer{
+
+            p{
+                width: auto;
+            }
+        }
+    }
+
+    @include mq("md"){
+        .footer-body{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .card1{
+                justify-self: center;
+
+                .body{
+                    margin-top: 2.5rem;
+                }
+            }
+        }
+    }
+
+    @include mq("lg"){
+        .footer-wrapper{
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "header body body";
+            align-items: center;
+            .footer-header{
+                padding: 0;
+                grid-area: header;
+            }
+            .footer-body{
+                padding: 0;
+                margin: 0;
+                margin-right: 3rem;
+                grid-area: body;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                .card1{
+                    padding-top: 3.3rem;
+                }
+                .card2{
+                    justify-self: center;
+                }
+            }
+        }
+    }
+
+    @include mq("xlg"){
+
+        .footer-wrapper{
+            max-width: 1400px;
+        }
+    }
+}

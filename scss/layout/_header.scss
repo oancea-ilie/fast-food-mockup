@@ -1,0 +1,132 @@
+header{
+    background-color: $first-color;
+    position: relative;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0  1.5rem;
+        padding: 0.5rem 0;
+        img{
+            margin-top: 0.5rem;
+            width: 100px;
+        }
+        i{
+            font-size: $f-6;
+            background-color: $last-color;
+            padding: 0.4rem 0.8rem;
+            cursor: pointer;
+            transition: $trans-2;
+        }
+        i:hover{
+            border-radius: $rad-10px;
+        }
+        nav{
+            display: none;
+            .active{
+                color: $last-color;
+            }
+        }
+    }
+
+    .nav-toggle{
+        background-color: $first-color;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem;
+        transition: 1s all;
+        a{
+            color: white;
+            padding: 0.5rem;
+            font-size: $f-4;
+            transition: $trans-2;
+        }
+        a:hover{
+            color: $last-color;
+        }
+    }
+
+    @include mq("md"){
+        box-shadow: $shadow-1;
+        // position: sticky;
+        // top: 0;
+        // left: 0;
+        // z-index: 999;
+        .container{
+            border: none;
+            .fa-bars{
+                display: none;
+            }
+            nav{
+                display: flex;
+                gap: 1.5rem;
+                align-items: center;
+                a{
+                    color: white;
+                    font-size: $f-3;
+                    font-weight: bold;
+                    transition: $trans-2;
+                }
+                a:hover{
+                    color: $last-color;
+                }
+                .order-now{
+                    padding: 0.5rem 0;
+                    border-left: 1px solid $white;
+                    padding-left: 1rem;
+                    h1{
+                        margin-bottom: 0.5rem;
+                        color: $last-color;
+                        font-size: $f-3;
+                    }
+                    a{
+                        font-size: $f-3;
+                    }
+                }
+            }
+        }
+    }
+
+    @include mq("lg"){
+        .container{
+            position: relative;
+            margin: 0 auto;
+            max-width: 1400px;
+            padding: 1.5rem 2rem;
+            img{
+                margin-top: 0;
+                width: 150px;
+                position: absolute;
+                top: 0;
+            }
+
+            nav{
+                a{
+                    font-size: $f-4;
+                    font-weight: 400;
+                }
+                .order-now{
+                    a{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    @include mq("xlg"){
+
+        .container{
+            
+            nav{
+                
+                .order-now{
+                    a{
+                        font-size: $f-5;
+                    }
+                }
+            }
+        }
+    }
+}

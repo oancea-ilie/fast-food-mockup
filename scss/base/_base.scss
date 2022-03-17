@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    a{
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    button{
+        border-radius: $rad-5px;
+        background-color: $first-color;
+        display: inline-block;
+        transition: $trans-1;
+        outline: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        padding: $space-0 $space-2;
+    }
+    button:hover{
+        background-color: $last-color;
+    }
+
+    input{
+        transition: $trans-1;
+        margin: $space-0 0;
+        border-radius: $rad-5px;
+        outline: none;
+        border: 1px solid $first-color;
+        padding: $space-0 $space-1;
+    }
+    input:focus{
+        border: 1px solid $last-color;
+    }
+    img, svg{
+        width: 100%;
+        max-width: 100%;
+    }
+    h3, h4, h5, h6, p, span, a, button, input{
+        font-size: $f-1;
+    }
+    h2{
+        font-size: $f-2;
+    }
+    h1{
+        font-size: $f-3;  
+    }
+}

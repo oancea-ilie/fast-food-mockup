@@ -1,0 +1,49 @@
+$breakpoints:('sm':425px ,'md-5':500px, 'md-6':600px,'md-7':700px, 'md':768px ,'lg':1024px, "xlg": 1600px);
+
+//colors:
+$first-color: #a41a13;
+$last-color: #eec300;
+$last-color-light: #ccb265;
+$black:#242424;
+$grey: #797979;
+$white: #cacaca83;
+
+// font-size:
+ $f-1: 0.8rem;
+ $f-2: 0.9rem;
+ $f-3: 1.0rem;
+ $f-4: 1.2rem;
+ $f-5: 1.4rem;
+ $f-6: 1.6rem;
+ $f-7: 1.8rem;
+ $f-8: 2.0rem;
+$f-9: 2.2rem;
+$f-10: 2.4rem;
+$f-11: 2.6rem;
+$f-12: 2.8rem;
+$f-13: 3.0rem;
+
+// spaceses:
+$space-0: 0.3rem;
+$space-1: 0.5rem;
+$space-2: 1.0rem;
+$space-3: 1.5rem;
+$space-4: 2.0rem;
+$space-5: 2.5rem;
+$space-6: 3.0rem;
+
+// shadow
+$shadow-1: 0px 5px 4px 0px rgb(0 0 0 / 10%);
+
+// border
+$border-1px: 1px solid #e0e0e0;
+$border-5px: 5px solid #e0e0e0;
+
+// border-radios:
+$rad-5px: 5px;
+$rad-10px: 10px;
+
+//transitions:
+$trans-1: 0.2s all;
+$trans-2: 0.3s all;
+$trans-3: 0.4s all;

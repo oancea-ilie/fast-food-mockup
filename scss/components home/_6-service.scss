@@ -1,0 +1,57 @@
+.service{
+    margin-top: 5rem;
+    .container{
+        box-shadow: $shadow-1;
+        background-color: white;
+        margin: 0 1rem;
+        padding: 4rem 0;
+        display: grid;
+        grid-gap: 2.5rem;
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+        .card{
+            text-align: center;
+            width: 200px;
+
+            img{
+                width: 110px;
+            }
+            h1{
+                font-family: "Poppins", sans-serif;
+                margin: 1rem 0;
+                font-size: $f-4;
+            }
+            p{
+                font-size: $f-3;
+                color: $grey;
+                line-height: 1.7rem;
+            }
+        }
+    }
+
+    @include mq("md"){
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-radius: $rad-5px;
+        }
+    }
+
+    @include mq("lg"){
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 5rem;
+        .container {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+    
+    @include mq("xlg"){
+        max-width: 1370px;
+    }
+    
+}

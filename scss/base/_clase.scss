@@ -1,0 +1,12 @@
+.link{
+    border-radius: $rad-5px;
+    background-color: $first-color;
+    transition: $trans-1;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: $space-0 $space-2;
+}
+.link:hover{
+    background-color: $last-color;
+}

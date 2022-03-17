@@ -1,0 +1,170 @@
+.hero{
+    background-image: url(../../img/texture-2.png);
+    .container{
+        padding: 0 1.5rem;
+        padding-top: 4rem;
+        height: 550px;
+        img{
+            width: 170px;
+        }
+
+        h2{
+            font-family: "Playfair Display", serif;
+            font-style: italic;
+            font-size: $f-5;
+            color: $last-color;
+        }
+        h1{
+            font-family: "Playfair Display", serif;
+            font-size: $f-7;
+            color: white;
+            font-weight: bold;
+            padding: 0.5rem 0;
+        }
+
+        .first{
+            color: white;
+            font-family: "Playfair Display", serif;
+            font-size: $f-4;
+            line-height: 1.7rem;
+        }
+        .italian{
+            width: 350px;
+            padding-top: 1rem;
+            font-size: $f-3;
+            font-style: italic;
+            color: white;
+            line-height: 1.5rem;
+        }
+        a{
+            margin-top: 1rem;
+            background-color: white;
+            color: $black;
+            padding: 1rem 3rem;
+            font-size: $f-2;
+            font-weight: 600;
+            border-radius: $rad-5px;
+            margin-bottom: 3.5rem;
+            transition: $trans-3;
+        }
+        a:hover{
+            background-color: $last-color;
+        }
+    }
+
+    @include mq("md-5"){
+
+        .container{
+            
+            .first{
+                font-size: $f-6;
+            }
+        }
+    }
+
+    @include mq("md-6"){
+
+        .container{
+            max-width: 650px;
+            height: 600px;
+            margin: 0 auto;
+            h2{
+                font-size: $f-7;
+            }
+            h1{
+                font-size: $f-9;
+            }
+            .first{
+                font-size: $f-7;
+            }
+            .italian{
+                padding-top: 1.5rem;
+                font-size: $f-5;
+                width: 450px;
+                text-align: start;
+            }
+            a{
+                margin-top: 1.5rem;
+                padding: 1.1rem 3.3rem ;
+                font-size: $f-3;
+                letter-spacing: 0.2rem;
+            }
+        }
+    }
+
+    @include mq("md"){
+        
+        .container{
+            max-width: 800px;
+            padding: 0 2rem;
+            padding-top: 4rem;
+            height: 650px;
+            img{
+                width: 190px;
+            }
+
+            h1{
+                font-size: $f-12;
+            }
+            .first{
+                font-size: $f-8;
+            }
+            .italian{
+                padding-top: 1.5rem;
+                font-size: $f-5;
+                width: 550px;
+                text-align: start;
+            }
+            a{
+                margin-top: 2rem;
+                padding: 1.1rem 3.3rem ;
+                font-size: $f-3;
+                letter-spacing: 0.2rem;
+                margin-bottom: 6rem;
+            }
+        }
+    }
+
+    @include mq("lg"){
+        .container{
+            height: 765px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "text img";
+            align-content:center;
+            align-items: center;
+            max-width: 1200px;
+            img{
+                grid-area: img;
+                width: 100%;
+                max-width: 600px;
+            }
+            .text{
+                grid-area: text;
+                margin-top: 6rem;
+                h2{
+                    font-size: $f-9;
+                }
+                h1{
+                    font-size: 4rem;
+                }
+                .first{
+                    width: auto;
+                }
+
+                a{
+                    margin-top: 2rem;
+                    padding: 1.4rem 3.3rem ;
+                }
+            }
+
+        }
+    }
+
+    @include mq("xlg"){
+        
+        .container{
+            max-width: 1400px;
+        }
+    }
+}

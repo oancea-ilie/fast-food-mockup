@@ -1,0 +1,195 @@
+.hot-combos{
+    margin: 4rem 0;
+
+    .container{
+
+        .header{
+            margin: 0 1rem;
+            padding-bottom: 1rem;
+            .title{
+                margin-bottom: 2rem;
+                
+                h1{
+                    font-size: $f-8;
+                    text-align: center;
+                }
+                .line{
+                    height: 3px;
+                    background-color: #e93030;
+                    width: 60px;
+                    margin: 0 auto;
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        .body{
+            margin: 0 1rem;
+            display: grid;
+            grid-gap: 2rem;
+            .card{
+                border-radius: $rad-5px;
+                background-image: url(../../img/hot-combo-img-1.jpg);
+                background-position: center;
+                background-size: cover;
+                height: 250px;
+                color: white;
+                .text{
+                    padding: 1.5rem;
+                    h1{
+                        font-size: $f-10;
+                        span{
+                            font-size: $f-9;
+                            font-family: "Poppins", sans-serif;
+                            font-weight: 400;
+                        }
+                    }
+                    h2{
+                        margin-left: 130px;
+                        font-size: $f-9;
+                        font-weight: 800;
+                        font-family: "Dancing Script", cursive;
+                    }
+
+                    .price{
+                        position: relative;
+                        margin-top: -1.6rem;
+                        background-color: #c4251c;
+                        color: white;
+                        border-radius: 50%;
+                        width: 120px;
+                        height: 120px;
+                        span{
+                            position: absolute;
+                            top: 20px;
+                            left: 40px;
+                            font-size: $f-4;
+                        }
+                        sub{
+                            position: absolute;
+                            top: 60px;
+                            left: 18px;
+                            font-size: $f-8;
+                        }
+                        h2{
+                            font-family: "Poppins", sans-serif;
+                            position: absolute;
+                            font-size: $f-13;
+                            font-weight: bold;
+                            top: 40px;
+                            right: 25px;
+                        }
+                    }
+                }
+            }
+
+            .card-2{
+                background-image: url(../../img/hot-combo-img-2.jpg);
+                .text{
+                    .price{
+                        background-color: $last-color;
+                    }
+                }
+            }
+        }
+    }
+
+    @include mq("md-5"){
+        .container{
+
+            .body{
+
+                .card{
+                    height: 360px;
+                }
+            }
+        }
+    }
+    
+    @include mq("md-6"){
+        .container{
+
+            .body{
+
+                .card{
+                    height: 480px;
+                    .text{
+                        padding: 2rem;
+                        h2{
+                            font-size: $f-10;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @include mq("md"){
+        .container{
+
+            .body{
+                .card{
+                    height: 600px;
+                    .text{
+                        padding: 3rem;
+                        h1{
+                            font-size: 3.5rem;
+                            span{
+                                font-size: 3.5rem;
+                                font-weight: 300;
+                            }
+                        }
+                        h2{
+                            font-size: $f-11;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include mq("lg"){
+        margin: 8rem 0;
+        .container{
+                margin: 0 auto;
+                max-width: 1200px;
+            .body{
+                display: grid;
+                margin: 0 1rem;
+                grid-template-columns: 1fr 1fr;
+                .card{
+                    height: 390px;
+                    .text{
+                        padding: 2rem;
+                        h1{
+                            font-size: 3.5rem;
+                            span{
+                                font-size: 3.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include mq("xlg"){
+        .container{
+            max-width: 1370px;
+            .body{
+                .card{
+                    height: 390px;
+                    .text{
+                        padding: 2rem;
+                        h1{
+                            font-size: 3.6rem;
+                            span{
+                                font-size: 3.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1705 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+* a {
+  text-decoration: none;
+  display: inline-block;
+}
+* button {
+  border-radius: 5px;
+  background-color: #a41a13;
+  display: inline-block;
+  transition: 0.2s all;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.3rem 1rem;
+}
+* button:hover {
+  background-color: #eec300;
+}
+* input {
+  transition: 0.2s all;
+  margin: 0.3rem 0;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #a41a13;
+  padding: 0.3rem 0.5rem;
+}
+* input:focus {
+  border: 1px solid #eec300;
+}
+* img, * svg {
+  width: 100%;
+  max-width: 100%;
+}
+* h3, * h4, * h5, * h6, * p, * span, * a, * button, * input {
+  font-size: 0.8rem;
+}
+* h2 {
+  font-size: 0.9rem;
+}
+* h1 {
+  font-size: 1rem;
+}
+
+.link {
+  border-radius: 5px;
+  background-color: #a41a13;
+  transition: 0.2s all;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding: 0.3rem 1rem;
+}
+
+.link:hover {
+  background-color: #eec300;
+}
+
+header {
+  background-color: #a41a13;
+  position: relative;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1.5rem;
+  padding: 0.5rem 0;
+}
+header .container img {
+  margin-top: 0.5rem;
+  width: 100px;
+}
+header .container i {
+  font-size: 1.6rem;
+  background-color: #eec300;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+header .container i:hover {
+  border-radius: 10px;
+}
+header .container nav {
+  display: none;
+}
+header .container nav .active {
+  color: #eec300;
+}
+header .nav-toggle {
+  background-color: #a41a13;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  transition: 1s all;
+}
+header .nav-toggle a {
+  color: white;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  transition: 0.3s all;
+}
+header .nav-toggle a:hover {
+  color: #eec300;
+}
+@media (min-width: 768px) {
+  header {
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+  header .container {
+    border: none;
+  }
+  header .container .fa-bars {
+    display: none;
+  }
+  header .container nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  header .container nav a {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s all;
+  }
+  header .container nav a:hover {
+    color: #eec300;
+  }
+  header .container nav .order-now {
+    padding: 0.5rem 0;
+    border-left: 1px solid #cacaca83;
+    padding-left: 1rem;
+  }
+  header .container nav .order-now h1 {
+    margin-bottom: 0.5rem;
+    color: #eec300;
+    font-size: 1rem;
+  }
+  header .container nav .order-now a {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  header .container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 1.5rem 2rem;
+  }
+  header .container img {
+    margin-top: 0;
+    width: 150px;
+    position: absolute;
+    top: 0;
+  }
+  header .container nav a {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  header .container nav .order-now a {
+    font-weight: bold;
+  }
+}
+@media (min-width: 1600px) {
+  header .container nav .order-now a {
+    font-size: 1.4rem;
+  }
+}
+
+.main-home {
+  background-color: #cacaca83;
+  padding-bottom: 5rem;
+}
+
+footer {
+  background-color: #0f1924;
+}
+footer .footer-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+}
+footer .footer-header img {
+  width: 135px;
+}
+footer .footer-header p {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #a8a8a8;
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+footer .footer-body {
+  color: white;
+  margin: 0 1rem;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+}
+footer .footer-body .card1 .title {
+  margin-bottom: 2rem;
+}
+footer .footer-body .card1 .title h1 {
+  font-size: 1.2rem;
+  padding-bottom: 0.8rem;
+}
+footer .footer-body .card1 .title .line {
+  height: 2px;
+  width: 40px;
+  background-color: #a41a13;
+}
+footer .footer-body .card1 .body {
+  margin-bottom: 3rem;
+}
+footer .footer-body .card1 .body h1 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+footer .footer-body .card1 .body p {
+  color: #a8a8a8;
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+footer .footer-body .card2 .title {
+  margin-bottom: 2.5rem;
+}
+footer .footer-body .card2 .title h1 {
+  font-size: 1.2rem;
+  padding-bottom: 0.8rem;
+}
+footer .footer-body .card2 .title .line {
+  height: 2px;
+  width: 40px;
+  background-color: #a41a13;
+}
+footer .footer-body .card2 .body {
+  margin-right: 4rem;
+}
+footer .footer-body .card2 .body li {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  list-style: none;
+  color: #a8a8a8;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+footer .footer-body .card2 .body li span {
+  font-size: 1rem;
+  display: inline-block;
+  margin-left: auto;
+}
+footer .footer-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+footer .footer-footer p {
+  width: 240px;
+  line-height: 1.7rem;
+  color: #a8a8a8;
+  font-size: 1rem;
+}
+footer .footer-footer p span {
+  font-size: 1rem;
+  color: #a41a13;
+  transition: 0.4s all;
+  cursor: pointer;
+}
+footer .footer-footer p span:hover {
+  color: #eec300;
+}
+@media (min-width: 500px) {
+  footer .footer-footer p {
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  footer .footer-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  footer .footer-body .card1 {
+    justify-self: center;
+  }
+  footer .footer-body .card1 .body {
+    margin-top: 2.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  footer .footer-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header body body";
+    align-items: center;
+  }
+  footer .footer-wrapper .footer-header {
+    padding: 0;
+    grid-area: header;
+  }
+  footer .footer-wrapper .footer-body {
+    padding: 0;
+    margin: 0;
+    margin-right: 3rem;
+    grid-area: body;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .footer-wrapper .footer-body .card1 {
+    padding-top: 3.3rem;
+  }
+  footer .footer-wrapper .footer-body .card2 {
+    justify-self: center;
+  }
+}
+@media (min-width: 1600px) {
+  footer .footer-wrapper {
+    max-width: 1400px;
+  }
+}
+
+.hero {
+  background-image: url(../../img/texture-2.png);
+}
+.hero .container {
+  padding: 0 1.5rem;
+  padding-top: 4rem;
+  height: 550px;
+}
+.hero .container img {
+  width: 170px;
+}
+.hero .container h2 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #eec300;
+}
+.hero .container h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+.hero .container .first {
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+.hero .container .italian {
+  width: 350px;
+  padding-top: 1rem;
+  font-size: 1rem;
+  font-style: italic;
+  color: white;
+  line-height: 1.5rem;
+}
+.hero .container a {
+  margin-top: 1rem;
+  background-color: white;
+  color: #242424;
+  padding: 1rem 3rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-bottom: 3.5rem;
+  transition: 0.4s all;
+}
+.hero .container a:hover {
+  background-color: #eec300;
+}
+@media (min-width: 500px) {
+  .hero .container .first {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 600px) {
+  .hero .container {
+    max-width: 650px;
+    height: 600px;
+    margin: 0 auto;
+  }
+  .hero .container h2 {
+    font-size: 1.8rem;
+  }
+  .hero .container h1 {
+    font-size: 2.2rem;
+  }
+  .hero .container .first {
+    font-size: 1.8rem;
+  }
+  .hero .container .italian {
+    padding-top: 1.5rem;
+    font-size: 1.4rem;
+    width: 450px;
+    text-align: start;
+  }
+  .hero .container a {
+    margin-top: 1.5rem;
+    padding: 1.1rem 3.3rem;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+  }
+}
+@media (min-width: 768px) {
+  .hero .container {
+    max-width: 800px;
+    padding: 0 2rem;
+    padding-top: 4rem;
+    height: 650px;
+  }
+  .hero .container img {
+    width: 190px;
+  }
+  .hero .container h1 {
+    font-size: 2.8rem;
+  }
+  .hero .container .first {
+    font-size: 2rem;
+  }
+  .hero .container .italian {
+    padding-top: 1.5rem;
+    font-size: 1.4rem;
+    width: 550px;
+    text-align: start;
+  }
+  .hero .container a {
+    margin-top: 2rem;
+    padding: 1.1rem 3.3rem;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 6rem;
+  }
+}
+@media (min-width: 1024px) {
+  .hero .container {
+    height: 765px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text img";
+    align-content: center;
+    align-items: center;
+    max-width: 1200px;
+  }
+  .hero .container img {
+    grid-area: img;
+    width: 100%;
+    max-width: 600px;
+  }
+  .hero .container .text {
+    grid-area: text;
+    margin-top: 6rem;
+  }
+  .hero .container .text h2 {
+    font-size: 2.2rem;
+  }
+  .hero .container .text h1 {
+    font-size: 4rem;
+  }
+  .hero .container .text .first {
+    width: auto;
+  }
+  .hero .container .text a {
+    margin-top: 2rem;
+    padding: 1.4rem 3.3rem;
+  }
+}
+@media (min-width: 1600px) {
+  .hero .container {
+    max-width: 1400px;
+  }
+}
+
+.oferte {
+  margin-top: 4rem;
+}
+.oferte .container {
+  margin: 0 1rem;
+  display: grid;
+  grid-gap: 2rem;
+}
+.oferte .container .card1 {
+  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.1);
+  background-image: url(../../img/ofer-img-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 170px;
+  position: relative;
+  border-radius: 5px;
+}
+.oferte .container .card1 .text {
+  display: none;
+}
+.oferte .container .card1 a {
+  color: white;
+  background-color: #a41a13;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+  transition: 0.4s all;
+}
+.oferte .container .card1 a:hover {
+  border-radius: 30px;
+}
+.oferte .container .card2 {
+  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-image: url(../../img/ofer-img-2.jpg);
+  height: 330px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.oferte .container .card2 .text {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+}
+.oferte .container .card2 .text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+.oferte .container .card2 .text h1 span {
+  color: #542a0c;
+  font-size: inherit;
+  font-weight: inherit;
+}
+.oferte .container .card2 .text h2 {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 0.5rem 0;
+}
+.oferte .container .card2 .text a {
+  margin-top: 0.5rem;
+  color: white;
+  background-color: #a41a13;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  transition: 0.4s all;
+}
+.oferte .container .card2 .text a:hover {
+  border-radius: 30px;
+}
+.oferte .container .card3 {
+  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-image: url(../../img/ofer-img-3.jpg);
+  height: 330px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.oferte .container .card3 .text {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+}
+.oferte .container .card3 .text h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+.oferte .container .card3 .text h1 span {
+  font-family: "Dancing Script", cursive;
+  color: #eec300;
+  font-size: 1.4rem;
+  font-weight: inherit;
+}
+.oferte .container .card3 .text h2 {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.oferte .container .card3 .text a {
+  margin-top: 1rem;
+  color: white;
+  background-color: #a41a13;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  transition: 0.4s all;
+}
+.oferte .container .card3 .text a:hover {
+  border-radius: 30px;
+}
+@media (min-width: 500px) {
+  .oferte {
+    margin-top: 6.2rem;
+  }
+  .oferte .container .card1 {
+    height: 230px;
+  }
+  .oferte .container .card1 a {
+    right: 40px;
+  }
+  .oferte .container .card2 {
+    height: 450px;
+  }
+  .oferte .container .card2 .text {
+    top: 25%;
+    transform: translateY(-25%);
+    right: 40px;
+  }
+  .oferte .container .card3 {
+    height: 450px;
+  }
+  .oferte .container .card3 .text {
+    top: 25%;
+    transform: translateY(-25%);
+    right: 40px;
+  }
+}
+@media (min-width: 600px) {
+  .oferte .container .card1 {
+    height: 290px;
+  }
+  .oferte .container .card1 a {
+    right: 80px;
+  }
+  .oferte .container .card2 {
+    height: 600px;
+  }
+  .oferte .container .card2 .text {
+    top: 25%;
+    transform: translateY(-25%);
+    right: 80px;
+  }
+  .oferte .container .card3 {
+    height: 600px;
+  }
+  .oferte .container .card3 .text {
+    top: 25%;
+    transform: translateY(-25%);
+    right: 80px;
+  }
+}
+@media (min-width: 768px) {
+  .oferte .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "card1 card1" "card2 card3";
+  }
+  .oferte .container .card1 {
+    grid-area: card1;
+    height: 390px;
+  }
+  .oferte .container .card1 .text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 200px;
+  }
+  .oferte .container .card1 .text h1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  .oferte .container .card1 .text p {
+    margin-top: 0.3rem;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+  .oferte .container .card1 a {
+    right: 30px;
+  }
+  .oferte .container .card2 {
+    grid-area: card2;
+    height: 390px;
+  }
+  .oferte .container .card2 .text {
+    right: 30px;
+  }
+  .oferte .container .card3 {
+    grid-area: card3;
+    height: 390px;
+  }
+  .oferte .container .card3 .text {
+    right: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .oferte {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 6.2rem;
+  }
+  .oferte .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "card1 card2 card3";
+  }
+  .oferte .container .card1 {
+    grid-area: card1;
+    height: 250px;
+  }
+  .oferte .container .card1 .text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-30%);
+    right: 10px;
+  }
+  .oferte .container .card1 .text h1 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 800;
+  }
+  .oferte .container .card1 .text p {
+    margin-top: 0.3rem;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+  .oferte .container .card1 a {
+    top: 65%;
+    transform: translateY(-65%);
+    right: 50px;
+  }
+  .oferte .container .card2 {
+    grid-area: card2;
+    height: 250px;
+  }
+  .oferte .container .card2 .text {
+    right: 10px;
+  }
+  .oferte .container .card3 {
+    grid-area: card3;
+    height: 250px;
+  }
+  .oferte .container .card3 .text {
+    right: 10px;
+  }
+}
+@media (min-width: 1600px) {
+  .oferte {
+    max-width: 1370px;
+  }
+  .oferte .container .card1 {
+    height: 250px;
+  }
+  .oferte .container .card1 .text {
+    top: 30%;
+    transform: translateY(-30%);
+    right: 10px;
+  }
+  .oferte .container .card1 a {
+    top: 65%;
+    transform: translateY(-65%);
+    right: 70px;
+  }
+  .oferte .container .card2 {
+    height: 250px;
+  }
+  .oferte .container .card2 .text {
+    right: 30px;
+  }
+  .oferte .container .card3 {
+    grid-area: card3;
+    height: 250px;
+  }
+  .oferte .container .card3 .text {
+    right: 30px;
+  }
+}
+
+.products {
+  margin: 4.5rem 0;
+}
+.products .header {
+  margin: 0 1rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #797979;
+}
+.products .header .title {
+  margin-bottom: 2rem;
+}
+.products .header .title h1 {
+  font-family: Poppins, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 900;
+  color: #242424;
+}
+.products .header .title .line {
+  height: 3px;
+  background-color: #e93030;
+  width: 60px;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+.products .header .lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.products .header .lists a {
+  font-family: Poppins, sans-serif;
+  color: #242424;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.4s all;
+}
+.products .header .lists a:hover {
+  color: #e93030;
+}
+.products .header .lists .active {
+  color: #e93030;
+}
+.products .body {
+  padding-top: 3.5rem;
+  margin: 0 1rem;
+  display: grid;
+  grid-gap: 2rem;
+}
+.products .body .card {
+  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: white;
+  text-align: center;
+}
+.products .body .card img {
+  border-radius: 5px;
+}
+.products .body .card h1 {
+  font-family: Poppins, sans-serif;
+  font-size: 1.4rem;
+}
+.products .body .card p {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  color: #797979;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.products .body .card h2 {
+  font-size: 1.4rem;
+  color: #e93030;
+  font-weight: 900;
+}
+.products .body .card a {
+  background-color: #a41a13;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 5px 5px 0 0;
+  padding: 1rem;
+  color: white;
+  margin-top: 1rem;
+  transition: 0.4s all;
+  font-weight: bold;
+}
+.products .body .card a:hover {
+  background-color: #eec300;
+}
+@media (min-width: 600px) {
+  .products .header .title h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .products {
+    margin: 8rem 0;
+  }
+  .products .body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .products {
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+  .products .header .title h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+  .products .header .lists {
+    gap: 3rem;
+  }
+  .products .header .lists a {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  .products .body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1600px) {
+  .products {
+    max-width: 1370px;
+  }
+}
+
+.separator .container {
+  background-image: url(../../img/breaker-1.jpg);
+  background-position: right;
+  height: 630px;
+}
+.separator .container .card {
+  margin: 0 1rem;
+  padding-top: 7rem;
+  color: white;
+}
+.separator .container .card .text {
+  margin-bottom: 2rem;
+}
+.separator .container .card .text h2 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 1.6rem;
+  display: inline-block;
+  font-weight: 400;
+}
+.separator .container .card .text .line {
+  margin-left: 0.5rem;
+  display: inline-block;
+  height: 1px;
+  background-color: white;
+  width: 100px;
+}
+.separator .container .card h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.separator .container .card .price {
+  font-size: 4rem;
+  position: relative;
+  top: 0;
+  left: 20px;
+  display: inline-block;
+}
+.separator .container .card .price .dolar {
+  position: absolute;
+  top: 15px;
+  left: -20px;
+  font-size: 2.2rem;
+}
+.separator .container .card .price .each {
+  position: absolute;
+  bottom: -14px;
+  right: -5px;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.separator .container .card ul {
+  margin-top: 1rem;
+  color: #eec300;
+  list-style-type: none;
+}
+.separator .container .card ul li {
+  font-size: 1.2rem;
+  margin-bottom: 0.7rem;
+}
+.separator .container .card a {
+  margin-top: 1.5rem;
+  background-color: #a41a13;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  color: white;
+  padding: 1.3rem 3.5rem;
+  transition: 0.4s all;
+}
+.separator .container .card a:hover {
+  background-color: #eec300;
+}
+@media (min-width: 500px) {
+  .separator .container {
+    height: 530px;
+  }
+  .separator .container .card h1 {
+    font-size: 2.4rem;
+    font-weight: 900;
+  }
+  .separator .container .card .grid {
+    display: flex;
+  }
+  .separator .container .card .grid .price {
+    margin-right: 4.5rem;
+    left: 25px;
+    font-weight: 500;
+  }
+  .separator .container .card .grid .price .dolar {
+    font-weight: 500;
+    left: -25px;
+  }
+  .separator .container .card .grid ul {
+    margin-top: 0.5rem;
+  }
+  .separator .container .card .grid ul li {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 768px) {
+  .separator .container .card {
+    margin: 0 2rem;
+  }
+  .separator .container .card h1 {
+    font-size: 3rem;
+  }
+  .separator .container .card a {
+    padding: 1.3rem 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .separator .container {
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .separator .container .card h1 {
+    font-size: 4rem;
+  }
+}
+
+.hot-combos {
+  margin: 4rem 0;
+}
+.hot-combos .container .header {
+  margin: 0 1rem;
+  padding-bottom: 1rem;
+}
+.hot-combos .container .header .title {
+  margin-bottom: 2rem;
+}
+.hot-combos .container .header .title h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+.hot-combos .container .header .title .line {
+  height: 3px;
+  background-color: #e93030;
+  width: 60px;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+.hot-combos .container .body {
+  margin: 0 1rem;
+  display: grid;
+  grid-gap: 2rem;
+}
+.hot-combos .container .body .card {
+  border-radius: 5px;
+  background-image: url(../../img/hot-combo-img-1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  color: white;
+}
+.hot-combos .container .body .card .text {
+  padding: 1.5rem;
+}
+.hot-combos .container .body .card .text h1 {
+  font-size: 2.4rem;
+}
+.hot-combos .container .body .card .text h1 span {
+  font-size: 2.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.hot-combos .container .body .card .text h2 {
+  margin-left: 130px;
+  font-size: 2.2rem;
+  font-weight: 800;
+  font-family: "Dancing Script", cursive;
+}
+.hot-combos .container .body .card .text .price {
+  position: relative;
+  margin-top: -1.6rem;
+  background-color: #c4251c;
+  color: white;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+.hot-combos .container .body .card .text .price span {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  font-size: 1.2rem;
+}
+.hot-combos .container .body .card .text .price sub {
+  position: absolute;
+  top: 60px;
+  left: 18px;
+  font-size: 2rem;
+}
+.hot-combos .container .body .card .text .price h2 {
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  font-size: 3rem;
+  font-weight: bold;
+  top: 40px;
+  right: 25px;
+}
+.hot-combos .container .body .card-2 {
+  background-image: url(../../img/hot-combo-img-2.jpg);
+}
+.hot-combos .container .body .card-2 .text .price {
+  background-color: #eec300;
+}
+@media (min-width: 500px) {
+  .hot-combos .container .body .card {
+    height: 360px;
+  }
+}
+@media (min-width: 600px) {
+  .hot-combos .container .body .card {
+    height: 480px;
+  }
+  .hot-combos .container .body .card .text {
+    padding: 2rem;
+  }
+  .hot-combos .container .body .card .text h2 {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 768px) {
+  .hot-combos .container .body .card {
+    height: 600px;
+  }
+  .hot-combos .container .body .card .text {
+    padding: 3rem;
+  }
+  .hot-combos .container .body .card .text h1 {
+    font-size: 3.5rem;
+  }
+  .hot-combos .container .body .card .text h1 span {
+    font-size: 3.5rem;
+    font-weight: 300;
+  }
+  .hot-combos .container .body .card .text h2 {
+    font-size: 2.6rem;
+  }
+}
+@media (min-width: 1024px) {
+  .hot-combos {
+    margin: 8rem 0;
+  }
+  .hot-combos .container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  .hot-combos .container .body {
+    display: grid;
+    margin: 0 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .hot-combos .container .body .card {
+    height: 390px;
+  }
+  .hot-combos .container .body .card .text {
+    padding: 2rem;
+  }
+  .hot-combos .container .body .card .text h1 {
+    font-size: 3.5rem;
+  }
+  .hot-combos .container .body .card .text h1 span {
+    font-size: 3.6rem;
+  }
+}
+@media (min-width: 1600px) {
+  .hot-combos .container {
+    max-width: 1370px;
+  }
+  .hot-combos .container .body .card {
+    height: 390px;
+  }
+  .hot-combos .container .body .card .text {
+    padding: 2rem;
+  }
+  .hot-combos .container .body .card .text h1 {
+    font-size: 3.6rem;
+  }
+  .hot-combos .container .body .card .text h1 span {
+    font-size: 3.6rem;
+  }
+}
+
+.delivery {
+  background-color: #a41a13;
+}
+.delivery .container {
+  padding-top: 5rem;
+  margin: 0 1rem;
+}
+.delivery .container .img-res {
+  display: none;
+}
+.delivery .container .card {
+  color: white;
+  text-align: center;
+  padding: 4rem 0;
+}
+.delivery .container .card h2 {
+  font-family: "Dancing Script", cursive;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 2.2rem;
+}
+.delivery .container .card h1 {
+  font-size: 4rem;
+  padding: 0.8rem;
+}
+.delivery .container .card p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+.delivery .container .card p:last-of-type {
+  margin: 1rem 0;
+}
+.delivery .container .card a {
+  color: #242424;
+  padding: 1.3rem 3rem;
+  background-color: #eec300;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  transition: 0.4s all;
+}
+.delivery .container .card a:hover {
+  background-color: white;
+}
+@media (min-width: 600px) {
+  .delivery .container {
+    text-align: center;
+  }
+  .delivery .container img {
+    padding: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .delivery .container img {
+    max-width: 600px;
+  }
+}
+@media (min-width: 1024px) {
+  .delivery .container {
+    display: grid;
+    padding-top: 1rem;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-gap: 2rem;
+    position: relative;
+  }
+  .delivery .container img {
+    max-width: 600px;
+  }
+  .delivery .container .card {
+    padding-top: 4rem;
+    text-align: start;
+    justify-self: flex-start;
+  }
+  .delivery .container .card h1 {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .delivery .container .card .corectie {
+    width: 500px;
+  }
+}
+@media (min-width: 1600px) {
+  .delivery .container {
+    grid-template-columns: 40% 60%;
+  }
+  .delivery .container .img-res {
+    padding: 0;
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 300px;
+    right: -15px;
+    bottom: 0;
+  }
+}
+
+.service {
+  margin-top: 5rem;
+}
+.service .container {
+  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  margin: 0 1rem;
+  padding: 4rem 0;
+  display: grid;
+  grid-gap: 2.5rem;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+.service .container .card {
+  text-align: center;
+  width: 200px;
+}
+.service .container .card img {
+  width: 110px;
+}
+.service .container .card h1 {
+  font-family: "Poppins", sans-serif;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+.service .container .card p {
+  font-size: 1rem;
+  color: #797979;
+  line-height: 1.7rem;
+}
+@media (min-width: 768px) {
+  .service .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 5px;
+  }
+}
+@media (min-width: 1024px) {
+  .service {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+  .service .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1600px) {
+  .service {
+    max-width: 1370px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

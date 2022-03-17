@@ -1,0 +1,27 @@
+// utilities
+@import 
+'utilities/variables',
+'utilities/mixins';
+
+//base
+@import 
+'base/reset',
+'base/base',
+'base/clase';
+
+
+// layout
+@import 
+'layout/header',
+'layout/main-home',
+'layout/footer';
+
+// components
+@import
+'components home/0-hero',
+'components home/1-oferte',
+'components home/2-products',
+'components home/3-separator',
+'components home/4-hot-combos',
+'components home/5-delivery',
+'components home/6-service';

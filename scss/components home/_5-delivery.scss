@@ -1,0 +1,110 @@
+.delivery{
+    background-color: $first-color;
+    .container{
+        padding-top: 5rem;
+        margin: 0 1rem;
+
+        .img-res{
+            display: none;
+        }
+        .card{
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+            h2{
+                font-family: "Dancing Script", cursive;
+                font-style: italic;
+                font-weight: 800;
+                font-size: $f-9;
+            }
+            h1{
+                font-size: 4rem;
+                padding: 0.8rem;
+            }
+            p{
+                font-size: $f-4;
+                line-height: 2rem;
+            }
+            p:last-of-type{
+                margin: 1rem 0;
+            }
+
+            a{
+                color: $black;
+                padding: 1.3rem 3rem;
+                background-color: $last-color;
+                border-radius: $rad-5px;
+                font-weight: 500;
+                font-size: $f-3;
+                letter-spacing: 0.2rem;
+                margin-bottom: 2rem;
+                margin-top: 1rem;
+                transition: $trans-3;
+            }
+            a:hover{
+                background-color: white;
+            }
+        }
+    }
+
+    @include mq("md-6"){
+        
+        .container{
+            text-align: center;
+            img{
+                padding: 2rem;
+            }
+        }
+    }
+    @include mq("md"){
+        
+        .container{
+
+            img{
+                max-width: 600px;
+            }
+        }
+    }
+
+    @include mq("lg"){
+        
+        .container{
+           display: grid;
+           padding-top: 1rem;
+           grid-template-columns: 1fr 1fr;
+           justify-items: center;
+           grid-gap: 2rem;
+           position: relative;
+            img{
+                max-width: 600px;
+            }
+            .card{
+                padding-top: 4rem;
+                text-align: start;
+                justify-self: flex-start;
+                h1{
+                    margin-left: 0;
+                    padding-left: 0;
+                }
+                .corectie{
+                    width: 500px;
+                }
+            }
+        }
+    }
+
+    @include mq("xlg"){
+        .container{
+            grid-template-columns: 40% 60%;
+            .img-res{
+                padding: 0;
+                margin: 0;
+                display: block;
+                position: absolute;
+                width: 300px;
+                right: -15px;
+                bottom: 0;
+            }
+        }
+    }
+}

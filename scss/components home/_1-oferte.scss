@@ -1,0 +1,327 @@
+.oferte{
+    margin-top: 4rem;
+    .container{
+        margin: 0 1rem;
+        display: grid;
+        grid-gap: 2rem;
+
+        .card1{
+            box-shadow: $shadow-1;
+            background-image: url(../../img/ofer-img-1.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 170px;
+            position: relative;
+            border-radius: $rad-5px;
+            .text{
+                display: none;
+            }
+            a{
+                color: white;
+                background-color: $first-color;
+                font-size: $f-5;
+                padding: 0.5rem 1rem;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 30px;
+                transition: $trans-3;
+            }
+            a:hover{
+                border-radius: 30px;
+            }
+        }
+        .card2{
+            box-shadow: $shadow-1;
+            border-radius: $rad-5px;
+            background-image: url(../../img/ofer-img-2.jpg);
+            height: 330px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            .text{
+                position: absolute;
+                top: 50px;
+                right: 30px;
+                h1{
+                    font-size: $f-8;
+                    font-weight: bold;
+                    color: white;
+                    span{
+                        color: #542a0c;
+                        font-size: inherit;
+                        font-weight: inherit;
+                    }
+                }
+                h2{
+                    color: white;
+                    font-size: $f-5;
+                    font-weight: 400;
+                    padding: 0.5rem 0;
+                }
+
+                a{
+                    margin-top: 0.5rem;
+                    color: white;
+                    background-color: $first-color;
+                    font-size: $f-4;
+                    padding: 0.5rem 1rem;
+                    transition: $trans-3;
+                }
+                a:hover{
+                    border-radius: 30px;
+                }
+            }
+        }
+        .card3{
+            box-shadow: $shadow-1;
+            border-radius: $rad-5px;
+            background-image: url(../../img/ofer-img-3.jpg);
+            height: 330px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            .text{
+                position: absolute;
+                top: 50px;
+                right: 30px;
+                h1{
+                    font-size: $f-7;
+                    font-weight: bold;
+                    color: white;
+                    span{
+                        font-family: "Dancing Script", cursive;
+                        color: $last-color;
+                        font-size: $f-5;
+                        font-weight: inherit;
+                    }
+                }
+                h2{
+                    color: white;
+                    font-size: $f-5;
+                    font-weight: 400;
+                }
+
+                a{
+                    margin-top: 1rem;
+                    color: white;
+                    background-color: $first-color;
+                    font-size: $f-4;
+                    padding: 0.5rem 1rem;
+                    transition: $trans-3;
+                }
+                a:hover{
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+
+    @include mq("md-5"){
+        margin-top: 6.2rem;
+
+        .container {
+
+            .card1{
+                height: 230px;
+                a{
+                    right: 40px;
+                }
+            }
+
+            .card2{
+                height: 450px;
+                .text{
+                    top: 25%;
+                    transform: translateY(-25%);
+                    right: 40px;
+                }
+
+            }
+            .card3{
+                height: 450px;
+                .text{
+                    top: 25%;
+                    transform: translateY(-25%);
+                    right: 40px;
+                }
+            }
+        }
+    }
+
+    @include mq("md-6"){
+        .container {
+
+            .card1{
+                height: 290px;
+                a{
+                    right: 80px;
+                }
+            }
+
+            .card2{
+                height: 600px;
+                .text{
+                    top: 25%;
+                    transform: translateY(-25%);
+                    right: 80px;
+                }
+
+            }
+            .card3{
+                height: 600px;
+                .text{
+                    top: 25%;
+                    transform: translateY(-25%);
+                    right: 80px;
+                }
+            }
+        }
+    }
+
+    @include mq("md"){
+
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "card1 card1"
+                                 "card2 card3";
+
+            .card1{
+                grid-area: card1;
+                height: 390px;
+                .text{
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 200px;
+                    h1{
+                        color: white;
+                        font-size: $f-8;
+                        font-weight: 800;
+                    }
+                    p{
+                        margin-top: 0.3rem;
+                        color: white;
+                        font-weight: 400;
+                        font-size: $f-4;
+                        font-style: italic;
+                    }
+                }
+                a{
+                    right: 30px;
+                }
+                
+            }
+            .card2{
+                grid-area: card2;
+                height: 390px;
+                .text{
+                    right: 30px;
+                }
+            }
+            .card3{
+                grid-area: card3;
+                height: 390px;
+                .text{
+                    right: 30px;
+                }
+            }
+        }
+    }
+
+    @include mq("lg"){
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 6.2rem;
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "card1 card2 card3";
+            .card1{
+                grid-area: card1;
+                height: 250px;
+                .text{
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 30%;
+                    transform: translateY(-30%);
+                    right: 10px;
+                    h1{
+                        color: white;
+                        font-size: $f-7;
+                        font-weight: 800;
+                    }
+                    p{
+                        margin-top: 0.3rem;
+                        color: white;
+                        font-weight: 400;
+                        font-size: $f-4;
+                        font-style: italic;
+                    }
+                }
+                a{
+                    top: 65%;
+                    transform: translateY(-65%);
+                    right: 50px;
+                }
+                
+            }
+            .card2{
+                grid-area: card2;
+                height: 250px;
+                .text{
+                    right: 10px;
+                }
+            }
+            .card3{
+                grid-area: card3;
+                height: 250px;
+                .text{
+                    right: 10px;
+                }
+            }
+        }
+    }
+
+    @include mq("xlg"){
+        max-width: 1370px;
+
+        .container{
+
+            .card1{
+                height: 250px;
+                .text{
+                    top: 30%;
+                    transform: translateY(-30%);
+                    right: 10px;
+                }
+                a{
+                    top: 65%;
+                    transform: translateY(-65%);
+                    right: 70px;
+                }
+                
+            }
+            .card2{
+                height: 250px;
+                .text{
+                    right: 30px;
+                }
+            }
+            .card3{
+                grid-area: card3;
+                height: 250px;
+                .text{
+                    right: 30px;
+                }
+            }
+        }
+    }
+}
