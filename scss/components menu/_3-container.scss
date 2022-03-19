@@ -1,0 +1,218 @@
+.container-menu{
+    margin: 0 1rem;
+    display: grid;
+    grid-gap: 1.5rem;
+    margin-bottom: 5rem;
+    .card1{
+        background-image: url(../../img/menu-1.jpg);
+    }
+    .card2{
+        background-image: url(../../img/menu-2.jpg);
+    }
+    .card3{
+        background-image: url(../../img/menu-3.jpg);
+    }
+    .card4{
+        background-image: url(../../img/menu-4.jpg);
+    }
+
+    .card{
+        box-shadow: $shadow-1;
+        background-size: cover;
+        background-position: center;
+        height: 270px;
+        border-radius: 5px;
+
+        .overlay{
+            border-radius: 5px;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.424);
+
+            .text{
+                color: white;
+                width: 60%;
+                padding: 2rem 1rem;
+                // background-color: red;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                .title{
+                    font-size: $f-5;
+                }
+                p{
+                    display: none;
+                }
+                .price{
+                    font-size: $f-5;
+                    margin: 1rem 0;
+                }
+                a{
+                    background-color: $last-color;
+                    padding: 1.1rem 2rem;
+                    color: $black;
+                    font-size: $f-3;
+                    font-weight: 600;
+                    border-radius: 5px;
+                    width: 200px;
+                    transition: $trans-3;
+                    letter-spacing: 0.2rem;
+                }
+                a:hover{
+                    background-color: white;
+                }
+
+            }
+        }
+    }
+
+
+    @include mq("md-5"){
+
+        .card{
+            height: 350px;
+            .overlay{
+
+                .text{
+                    padding: 0 2.5rem;
+                    // background-color: red;
+                    width: 73%;
+                    .title{
+                        font-size: $f-8;
+                    }
+                    p{
+                        display: none;
+                    }
+                    .price{
+                        font-size: 3.5rem;
+                        font-weight: 900;
+                        margin: 1rem 0;
+                    }
+                    a{
+                        font-size: $f-3;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+    @include mq("md-6"){
+
+        .card{
+            height: 450px;
+            .overlay{
+
+                .text{
+                    padding: 0 2.5rem;
+                    // background-color: red;
+                    width: 60%;
+                    .title{
+                        font-size: $f-8;
+                    }
+                    p{
+                        display: none;
+                    }
+                    .price{
+                        font-size: 3.5rem;
+                        font-weight: 900;
+                        margin: 1rem 0;
+                    }
+                    a{
+                        font-size: $f-3;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    @include mq("md"){
+
+        .card{
+            height: 600px;
+            .overlay{
+
+                .text{
+                    padding: 0 2.5rem;
+                    background-color: #a41a138f;
+                    width: 47%;
+                    max-width: 440px;
+                    .title{
+                        font-size: $f-8;
+                    }
+                    p{
+                        display: none;
+                    }
+                    .price{
+                        font-size: 3.5rem;
+                        font-weight: 900;
+                        margin: 1rem 0;
+                    }
+                    a{
+                        font-size: $f-3;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    @include mq("lg"){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .card{
+            height: 400px;
+            width: 100%;
+            .overlay{
+                .text{
+                    padding: 0 2.5rem;
+                    background-color: transparent;
+                    // background-color: #a41a138f;
+                    width: 100%;
+                    padding-right: 0;
+                    max-width: 450px;
+                    .title{
+                        font-size: 3rem;
+                    }
+                    p{
+                        margin-top: 1rem;
+                        display: block;
+                        font-size: $f-3;
+                        font-weight: 300;
+                        width: 370px;
+                        line-height: 1.7rem;
+                    }
+                    .price{
+                        font-size: 3.5rem;
+                        font-weight: 900;
+                        margin: 1rem 0;
+                    }
+                    a{
+                        font-size: $f-3;
+                    }
+                }
+            }
+        }
+
+    }
+
+    @include mq("xlg"){
+        max-width: 1700px;
+        margin-left: auto;
+        margin-right: auto;
+        .card{
+            height: 500px;
+        }
+    }
+}
+
+.margin-fix{
+    @include mq("xlg"){
+        margin: 0 1.5rem;
+    }
+}

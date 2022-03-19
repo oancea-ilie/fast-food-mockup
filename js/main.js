@@ -24,6 +24,7 @@ let corectie = ()=>{
         headerContainer.style.borderBottom= "none";
     }
 }
+
 bar.addEventListener("click",()=>{
 
     if(toggle == false){
@@ -46,3 +47,4 @@ let logo = document.querySelector(".logo");
 // corectie resize cand bar este deschis
 window.addEventListener("resize", corectie);
 corectie();
+

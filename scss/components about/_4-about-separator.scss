@@ -1,0 +1,91 @@
+.about-separator{
+    background-image: url("../../img/about-separator.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .container{
+        background-color: rgba(0, 0, 0, 0.363);
+        height: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .overlay{
+            h1{
+                font-size: $f-8;
+                font-weight: 800;
+                color: white;
+                margin-bottom: 3rem;
+                span{
+                    font-size: inherit;
+                }
+                .line{
+                    display: none;
+                }
+            }
+            p{
+                color: #efefef;
+                font-size: $f-3;
+                line-height: 1.9rem;
+                max-width: 350px;
+            }
+        }
+    }
+
+    @include mq("md-5"){
+
+        .container{
+            .overlay{
+                h1{
+                    font-size: $f-11;
+                }
+            }
+        }
+    }
+
+    @include mq("md"){
+
+        .container{
+            align-items: flex-start;
+            .overlay{
+                h1{
+                    margin-left: 1rem;
+                    text-align: start;
+                    font-size: 3.7rem;
+                    position: relative;
+                    .flex{
+                        display: flex;
+                        align-items: center;
+                        .line{
+                            display: inline-block;
+                            height: 1px;
+                            width: 100px;
+                            margin-right: 1rem;
+                            background-color: rgba(255, 255, 255, 0.5);
+                        }
+                    }
+                }
+                p{
+                    display: inline-block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    max-width: none;
+                    width: 500px;
+                    text-align: start;
+                }
+            }
+        }
+    }
+
+    @include mq("lg"){
+        .container{
+            .overlay{
+                width: 1000px;
+                margin: 0 auto;
+            }
+        }
+    }
+}

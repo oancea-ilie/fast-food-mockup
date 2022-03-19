@@ -1,0 +1,50 @@
+.cards-sections{
+    
+    background-color: #efefef;
+    .container{
+        padding: 5rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        .card{
+            background-color: white;
+            box-shadow: $shadow-1;
+            padding-bottom: 2rem;
+            border-radius: 5px;
+            img{
+                border-radius: 5px 5px 0 0;
+            }
+
+            a{
+                font-size: $f-4;
+                font-weight: 700;
+                color: black;
+                margin-top: 1.5rem;
+                margin-bottom: 1rem;
+                padding: 0 1.5rem;
+            }
+
+            p{
+                padding: 0 1.5rem;
+                font-size: $f-2;
+                color: $grey;
+                line-height: 1.8rem;
+            }
+        }
+    }
+
+    @include mq("md"){
+        .container{
+            padding: 6rem 1rem;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @include mq("lg"){
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}

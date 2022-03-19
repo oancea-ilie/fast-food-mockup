@@ -14,9 +14,10 @@
 @import 
 'layout/header',
 'layout/main-home',
+'layout/main-menu',
 'layout/footer';
 
-// components
+// components home
 @import
 'components home/0-hero',
 'components home/1-oferte',
@@ -25,3 +26,25 @@
 'components home/4-hot-combos',
 'components home/5-delivery',
 'components home/6-service';
+
+// components about us
+@import
+'components about/1-about-hero',
+'components about/2-text-img',
+'components about/3-cards-sections',
+'components about/4-about-separator',
+'components about/5-our-chef',
+'components about/6-service-about';
+
+// components contact
+@import
+'components contact/1-contact-hero',
+'components contact/2-write',
+'components contact/3-map';
+
+
+// components menu
+@import
+'components menu/1-menu-hero',
+'components menu/2-menu-products',
+'components menu/3-container';

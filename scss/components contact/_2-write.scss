@@ -1,0 +1,252 @@
+
+.bg-fixer{
+    background-color: #f3f3f3;
+}
+.write{
+    padding-bottom: 8rem;
+    .fix{
+        height: 700px;
+    }
+    .form{
+        position: absolute;
+        margin: 0 1.5rem;
+        margin-top: -80px;
+        padding: 2rem 1.5rem;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: $shadow-1;
+        h2{
+            text-align: start;
+            font-size: $f-4;
+            margin-bottom: 1.5rem;
+        }
+        p{
+            font-size: $f-3;
+            color: $grey;
+            line-height: 1.7rem;
+            margin-bottom: 2.5rem;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            .grid{
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 2rem;
+            }
+            input{
+                margin: 0;
+                border-radius: 0;
+                padding: 0.9rem 1.5rem;
+                width: 100%;
+                font-size: $f-2;
+                font-weight: 300;
+                background-color: #f6f7fc;
+                border: 1px solid #eeeff5;
+                margin-bottom: 1.5rem;
+                transition: $trans-3;
+            }
+            input:focus{
+                border: 1px solid $first-color;
+            }
+            textarea{
+                border-radius: 0;
+                padding: 0.9rem 1.5rem;
+                width: 100%;
+                font-size: $f-2;
+                font-weight: 300;
+                background-color: #f6f7fc;
+                border: 1px solid #eeeff5;
+                resize: none;
+                height: 250px;
+                margin-bottom: 1.5rem;
+                outline: none;
+                transition: $trans-3;
+            }
+            textarea:focus{
+                border: 1px solid $first-color;
+            }
+
+            button{
+                width: 100%;
+                padding: 1.1rem;
+                font-size: $f-2;
+            }
+        }
+    }
+
+    .text{
+        margin: 0 1.5rem;
+        margin-top: 4rem;
+        .title{
+            margin-bottom: 2rem;
+            h2{
+                font-size: $f-4;
+                margin-bottom: 0.7rem;
+            }
+            .line{
+                height: 2px;
+                width: 50px;
+                background-color: $black;
+            }
+        }
+
+        .container{
+            .card{
+                margin-bottom: 2rem;
+                h2{
+                    font-size: $f-4;
+                    font-weight: 500;
+                    margin-bottom: 1rem;
+                }
+                p{
+                    font-size: $f-3;
+                    color: $grey;
+                }
+            }
+            .card:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @include mq("md-5"){
+
+        .form{
+
+            h2{
+                font-size: $f-5;
+            }
+            form{
+
+                button{
+                    width: 170px;
+                    margin-right: auto;
+                    font-size: $f-3;
+                }
+            }
+        }
+        .text{
+            .title{
+                h2{
+                    font-size: $f-6;
+                }   
+            }
+
+            .container{
+                .card{
+                    h2{
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    @include mq("md-6"){
+
+        .form{
+
+            h2{
+                font-size: $f-7;
+            }
+            form{
+
+                button{
+                    width: 170px;
+                    margin-right: auto;
+                    font-size: $f-3;
+                }
+            }
+        }
+        .text{
+            .title{
+                h2{
+                    font-size: $f-7;
+                }   
+            }
+        }
+    }
+
+    @include mq("md"){
+
+        .fix{
+            height: 800px;
+        }
+        .form{
+            padding: 4.5rem 3rem;
+            h2{
+                font-size: $f-7;
+            }
+            form{
+
+                input{
+                    margin-bottom: 2rem;
+                }
+                textarea{
+                    margin-bottom: 2rem;
+                }
+                button{
+                    width: 170px;
+                    margin-right: auto;
+                    font-size: $f-3;
+                }
+            }
+        }
+        .text{
+            .title{
+                h2{
+                    font-size: $f-7;
+                }   
+            }
+        }
+    }
+
+    @include mq("lg"){
+        display: grid;
+        grid-template-columns:65% 35%;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding-bottom: 2rem;
+        .fix{
+            height: 800px;
+
+            .form{
+                position: unset;
+                padding: 4.5rem 3rem;
+                h2{
+                    font-size: $f-7;
+                }
+                form{
+    
+                    input{
+                        margin-bottom: 2rem;
+                    }
+                    textarea{
+                        margin-bottom: 2rem;
+                    }
+                    button{
+                        width: 170px;
+                        margin-right: auto;
+                        font-size: $f-3;
+                    }
+                }
+            }
+        }
+        .text{
+            .title{
+                h2{
+                    font-size: $f-7;
+                }   
+            }
+        }
+    }
+
+    @include mq("xlg"){
+        grid-gap: 4rem;
+    }
+}

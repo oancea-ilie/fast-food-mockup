@@ -1,5 +1,5 @@
 .hero{
-    background-image: url(../../img/texture-2.png);
+    background-image: url(../../img/bg-home.jpg);
     .container{
         padding: 0 1.5rem;
         padding-top: 4rem;
@@ -79,9 +79,11 @@
             }
             .italian{
                 padding-top: 1.5rem;
-                font-size: $f-5;
+                font-size: $f-4;
                 width: 450px;
                 text-align: start;
+                line-height: 1.8rem;
+                font-weight: 300;
             }
             a{
                 margin-top: 1.5rem;

@@ -1,4 +1,4 @@
-.products{
+.menu-products{
     margin: 4.5rem 0;
     .header{
         margin: 0 1rem;
@@ -92,6 +92,29 @@
         }
     }
 
+    .view-more{
+        padding: 1rem ;
+        text-align: center;
+        display: block;
+        margin: 0 1rem;
+        margin-top: 3rem;
+        font-size: $f-3;
+        font-weight: 400;
+        color: white;
+        background-color: $first-color;
+        transition: $trans-3;
+    }
+    .view-more:hover{
+        background-color: $last-color;
+    }
+    @include mq("md-5"){
+        .view-more{
+            width: 240px;
+            margin: 0 auto;
+            margin-top: 3rem;
+        }
+    }
+
     @include mq("md-6"){
         .header{
             
@@ -102,19 +125,21 @@
             }
         }
     }
+
     @include mq("md"){
     
-        margin: 8rem 0;
+        margin: 4rem 0;
         .body{
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
     }
+
     @include mq("lg"){
         margin: 0 auto;
         max-width: 1200px;
-        margin-top: 8rem;
-        margin-bottom: 8rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
         .header{
             .title{
                 h1{

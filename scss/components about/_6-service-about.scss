@@ -1,0 +1,64 @@
+.service-about{
+    margin-bottom: 6rem;
+    .container-about{
+        background-color: $white;
+        border-radius: 5px;
+        margin: 0 1rem;
+        padding: 4rem 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+        .card{
+            text-align: center;
+            width: 200px;
+            border-bottom: 1px solid white;
+            img{
+                padding-top: 2rem;
+                width: 110px;
+            }
+            h1{
+                font-family: "Poppins", sans-serif;
+                margin: 1rem 0;
+                font-size: $f-4;
+            }
+            p{
+                font-size: $f-3;
+                color: $grey;
+                line-height: 1.7rem;
+                padding-bottom: 2rem;
+            }
+        }
+        .card:last-of-type{
+            border-bottom: none;
+        }
+    }
+
+    @include mq("md"){
+
+        .container-about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-radius: $rad-5px;
+            .card:last-of-type{
+                border-bottom:  1px solid white;
+            }
+        }
+    }
+
+    @include mq("lg"){
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+        .container-about {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+    
+    @include mq("xlg"){
+        max-width: 1370px;
+    }
+    
+}
